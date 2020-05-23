@@ -1,6 +1,5 @@
 package de.mommde.sys.listener;
 
-import de.mommde.sys.main;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -17,6 +16,8 @@ import org.bukkit.plugin.Plugin;
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+
+import static de.mommde.sys.main.plugin;
 
 public class signClick implements Listener {
 
@@ -72,7 +73,7 @@ public class signClick implements Listener {
                         }
                         System.out.println("building");
 
-                        p.sendPluginMessage(main.plugin, "BungeeCord", b.toByteArray());
+                        p.sendPluginMessage(plugin, "BungeeCord", b.toByteArray());
 
                     }
 
@@ -95,7 +96,7 @@ public class signClick implements Listener {
                         }
                         System.out.println("plugintest");
 
-                        p.sendPluginMessage(main.plugin, "BungeeCord", b.toByteArray());
+                        p.sendPluginMessage(plugin, "BungeeCord", b.toByteArray());
 
                     }
                 }
@@ -115,7 +116,7 @@ public class signClick implements Listener {
                         }
 
 
-                        p.sendPluginMessage(main.plugin, "BungeeCord", b.toByteArray());
+                        p.sendPluginMessage(plugin, "BungeeCord", b.toByteArray());
                         System.out.println("lobby");
 
                     }

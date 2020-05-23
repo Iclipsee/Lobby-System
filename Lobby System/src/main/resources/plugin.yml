@@ -1,0 +1,15 @@
+name: SYSTEM
+version: ${project.version}
+main: de.mommde.sys.main
+api-version: 1.13
+authors: [MoMMde]
+description: The LOBBY System
+website: twitch.tv/immeraufvodka
+
+commands:
+  gm:
+    description: GAMEMODE
+  items:
+    description: GIVES YOU THE ITEMS
+  build:
+    description: BUILD COMMAND IN LOBBY
